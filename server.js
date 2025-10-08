@@ -29,5 +29,5 @@ wss.on("connection", (twilioWS, req) => {
   twilioWS.on("close", () => console.log("\n🔌 Twilio stream closed"));
 });
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 3000;
 server.listen(PORT, () => console.log("🎧 voice-ws listening on", PORT));
